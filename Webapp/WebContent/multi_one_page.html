@@ -10,16 +10,29 @@
 </head>
 
 <body>
-	<div data-role="page">
-		<div data-role="header">
-		<H1>Header 입니다.</H1>
+	<div data-role="page" id="main">
+		<div data-role="header" data-theme="b">
+		<H1>메인페이지</H1>
 		</div>
 		<div data-role="content">
-		<p>content 입니다.</p>
+		<H2>메인페이지입니다.</H2>
+		<p><a href="#sub" data-transition="slide">서브페이지</a></p>
 		</div>
 		<div data-role="footer">
-		<H2>footer 입니다.</H2>
+		<h2>Footer입니다.</h2>
 		</div>
 	</div>
+<div data-role="page" id="sub">
+	<div data-role="header">
+		<H1>서브페이지</H1>
+	</div>
+	<div data-role="content">
+		<H2>서브페이지입니다.</H2>
+		<p><a href="main" data-transition="slide" data-direction="reverse">메인페이지</a></p>
+	</div>
+	<div data-role="footer">
+		<H3>서브페이지입니다.</H3>
+	</div>
+</div>
 </body>
 </html>
